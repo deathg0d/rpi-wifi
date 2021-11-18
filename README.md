@@ -5,8 +5,8 @@
 This repo was forked from https://github.com/lukicdarkoo/rpi-wifi. This fork logs the settings and steps that worked for a Raspberry Pi Zero W.
 
 - This works on Raspbian Lite 2019-07-12 (buster): https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-07-12/
-- After etching buster into a sd card and setting up ssh and wpa_suppliant.conf for remote access, ssh into the PI. In the pi terminal run `sudo apt update`, accept the prompts.
-  - Your `wpa_suppliant.conf` file should look like the following:
+- After etching buster into a sd card and setting up ssh and wpa_supplicant.conf for remote access, ssh into the PI. In the pi terminal run `sudo apt update`, accept the prompts.
+  - Your `wpa_supplicant.conf` file should look like the following:
   
     ```
     country=US
