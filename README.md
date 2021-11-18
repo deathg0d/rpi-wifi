@@ -6,6 +6,20 @@ This repo was forked from https://github.com/lukicdarkoo/rpi-wifi. This fork log
 
 - This works on Raspbian Lite 2019-07-12 (buster): https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-07-12/
 - After etching buster into a sd card and setting up ssh and wpa_suppliant.conf for remote access, run `sudo apt update`, accept the prompts.
+  - Your `wpa_suppliant.conf` file should look like the following:
+  
+    ```
+    country=US
+    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+    update_config=1
+    
+    network={
+        ssid="YOUR_WIFI_SSID"
+        psk="YOUR_WIFI_PASSWORD"
+    }
+    ```
+  - To create an empty ssh file inside the Boot: folder of the sd card do:
+    `type NUL >> ssh` on Windows (command prompt) and `touch ssh` in Unix (Terminal)
 - Once this is done, run:
 ```
 curl https://raw.githubusercontent.com/deathg0d/rpi-wifi/master/configure | bash -s -- -a MyAP myappass -c WifiSSID wifipass
