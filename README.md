@@ -1,4 +1,4 @@
-# Setup Access Point and Managed Mode Wifi on Raspberry Pi Zero W
+# Setup Access Point and Managed Mode Wifi on Raspberry Pi Zero W (Version 1)
 ###### This repo was forked from https://github.com/lukicdarkoo/rpi-wifi
 
 ## About
